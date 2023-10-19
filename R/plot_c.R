@@ -64,8 +64,7 @@
 #'
 #' }
 #' @encoding UTF-8
-#' @examples{
-#'
+#' @examples
 #' # Step 1. Import the Italian Biome polygon data
 #' # Step 2. Run the download function
 #' # Step 3. Run the extract function
@@ -80,15 +79,16 @@
 #' # we need to make some changes to ensure that the table fits in the plotting
 #' # region.
 #'
-#' opar <- par()
-#' par(mar = c(1.5, 2.2, 1.5, 14) + 0.01) # We need to change a few things here
+#' # Set up plotting parameters
+#' opar <- par(mar = c(1.5, 2.2, 1.5, 14) + 0.01)
+#'
 #' plot_c(
 #'   it_data, geo_id = "MED",
 #'   l_tcols = c(14.5, 17, 18.5, 19.5, 21)
 #' )
 #' par(opar)
 #' # This output works if you export to a three column width sized image.
-#' }
+#'
 #'
 #' @importFrom macroBiome cliHoldridgePoints
 #' @importFrom dismo biovars
